@@ -1,0 +1,10 @@
+<h1>Restaurants#show</h1>
+
+<%= @restaurant.name %><br>
+<%= @restaurant.address %><br>
+<%= @restaurant.category %><br>
+<%= @restaurant.phone_number %><br>
+
+<%= link_to "Donner ton avis", new_restaurant_review_path(@restaurant), class: "btn btn-primary" %>
+
+<%= link_to "Retour à la liste", restaurants_path %>
